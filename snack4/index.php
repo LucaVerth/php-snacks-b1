@@ -3,16 +3,16 @@
 
 $numArray = [];
 $arrayLength = 15;
-$min = 1;
-$max = 50;
+$min = 50;
+$max = 45;
 
-if(($max - $min) <= $arrayLength){
-  $arrayLength = $max - $min;
+
+if(abs($max - $min) <= $arrayLength){
+  $arrayLength = abs($max - $min);
 }
 
 while (count($numArray) < $arrayLength) {
   $randomNumber = rand($min, $max);
-  $newInt = $randomNumber;
   //echo $newInt;
   if(!in_array($randomNumber, $numArray)){
     $numArray[] = $randomNumber;

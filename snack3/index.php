@@ -53,8 +53,6 @@ foreach ($posts as $post => $val) {
 }
 
 
-
-
 ?>
 
 <!DOCTYPE html>
